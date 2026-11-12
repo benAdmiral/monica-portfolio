@@ -6,6 +6,7 @@ import { Layout } from "@/components/Layout";
 import { About } from "@/components/sections/About";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Experience } from "@/components/sections/Experience";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
         switch (currentPage) {
             case "portfolio": return <Portfolio />;
             case "experience": return <Experience />;
+            case "testimonials": return <Testimonials />;
             case "contact": return <Contact />;
             default: return <About />;
         }
